@@ -5,13 +5,12 @@
   src: local('Open Sans Light'), local('OpenSans-Light'), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTaRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
 }
 
-$pink: #EA0B8C;
-$purple: #A086D3;
-$blue: #00ACEE;
-$red: #E74C3C;
-$dark-blue: #3B5998;
-$gold: #FFC937;
+$torch: #E45A3B;
+$twitter: #00ACEE;
 $grey: #888888;
+$yak: #27D4B2;
+$github: #4078c0;
+$purple: #A086D3;
 
 @mixin link($color) {
   color: $color;
@@ -79,27 +78,29 @@ sup {
 }
 
 #apps {
-  @include link($pink);
+  @include link($yak);
 }
 
 #github {
-  @include link($purple);
+  @include link($github);
 }
 
 #twitter {
-  @include link($blue);
+  @include link($twitter);
 }
 
+/*
 #blog {
   @include link($red);
 }
+*/
 
 #resume {
-  @include link($dark-blue);
+  @include link($torch);
 }
 
 #email {
-  @include link($gold);
+  @include link($purple);
 }
 
 #pgp {
